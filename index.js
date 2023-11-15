@@ -43,7 +43,7 @@ var users = {
 // when you create a user, generate a salt
 // and hash the password ('foobar' is the pass here)
 
-hash({ password: 'foobar' }, function (err, pass, salt, hash) {
+hash({ password: 'foo' }, function (err, pass, salt, hash) {
   if (err) throw err;
   // store the salt & hash in the "db"
   users.tj.salt = salt;

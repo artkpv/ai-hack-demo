@@ -1,9 +1,10 @@
 # Provision demo site:
-# - Download https://github.com/docker/awesome-compose/tree/master/react-express-mysql
+# - Download https://github.com/expressjs/express/tree/master/examples/auth
+# - npm install
 
-# Scan local ports using nmap and esp. 3000 port to check if a web server sitting on a port:
-nmap -p 3000 localhost
+node index.js > /dev/null &  # Start the web server in background
 
+python bruteforce.py
 
 
 
